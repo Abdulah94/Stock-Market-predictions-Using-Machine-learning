@@ -14,7 +14,10 @@ In this project we used a sql dataset that obtains and store stock data from Yah
 ## Reproducibility
 
 **To do so:**
-1. First, download the TA-lib library by running the below command in a single jupyter cell. It will take a couple minutes to complete. This library provides different technical indicators. 
+1. First, set up your SQL database by following the link above.
+2. Install required libraries before running the code by typing the following command in your terminal, ```Python
+pip install -r requirements.txt```
+3. Download the TA-lib library by running the below command in a single jupyter cell. It will take a couple minutes to complete. This library provides different technical indicators. 
 --- 
 ```python
 !wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
@@ -28,6 +31,7 @@ In this project we used a sql dataset that obtains and store stock data from Yah
 !TA_LIBRARY_PATH=~/lib TA_INCLUDE_PATH=~/include pip install ta-lib
 ```
 --- 
+4. Make sure to change the queries and functions variable names in the code to the stock ticker you to perform the analysis to.
 
 ## Technical Analysis
 Technical analysis is a trading discipline employed to evaluate investments and identify trading opportunities by analyzing statistical trends gathered from trading activity, such as price movement and volume. 
@@ -65,6 +69,9 @@ Next, and after adding the selected features, we add another column for the depe
 Finally, after we trained the classification model, we tested its performance on different S&P500 stocks. The model's performance varied from one stock to another. Some stocks got a high accuracy rate ( > 50% ), and some other stocks were harder to accurately predict ( < 50% ) and had a low accuracy rate. However, out of 15 randomly selected stocks, we got an average accuracy rate of 58%. Below is the confusion matrix and the classification report for the model's performance in predicting Google's stock movement. 
 
 ** A picture goes here **
+
+### Machine learning regression model using PROPHET package
+In this part we used the Facebook prophet package in addition to various functions to design three basic stock trading models according to the calculation results, these methods proved the validity of the trading model according to the historical data backtesting.
 
 
 ## Limitations and room for improvements
