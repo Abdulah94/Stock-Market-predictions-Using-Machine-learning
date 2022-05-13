@@ -7,6 +7,8 @@ Since scraping long historical data required very long time and for the objectiv
 
 **Reminder**: No need to do it! we already did it for you and you can start from the `SECOND STEP` to get your database ready!
 
+You need to use GCP SQL to create a database called `Project` and then connect the database with DBeaver (or another SQL client of your choice). After that, There is a file called `demo.env` in "eco395_final_project/code/demo.env" which you need to connect to the database. Modify the file `demo.env` by providing the right credentials and then change its name to`.env`.
+
 In this part you will get a list of all the S&P500 stock tickers using the Pandas `read_html` function to scrape Wikipedia as shown below:
 ```python
 table=pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
@@ -42,11 +44,13 @@ low_price.to_csv("../data_one/low_price.csv")
 open_price.to_csv("../data_one/open_price.csv")
 volume.to_csv("../data_one/volume.csv")
 ```
+Now, you can complete the remaining parts as explained in the `SECOND STEP` but you don't need to setup your database again since you already did, and you can continue with `sql_code_one.ipynb` since it has everything in `sql_code_two.ipynb`.
+
 ## SECOND STEP:
 
 ***Here you need to use "eco395_final_project/code/sql_setup/sql_code_two.ipynb" and "eco395_final_project/code/data_two"***
 
-You might want to use GCP SQL to create a database called `Project` and then connect the database with DBeaver (or another SQL client of your choice). After that, There is a file called `demo.env` in "eco395_final_project/code/demo.env" which you need to connect to the database. Modify the file `demo.env` by providing the right credentials and then change its name to`.env`.
+You need to use GCP SQL to create a database called `Project` and then connect the database with DBeaver (or another SQL client of your choice). After that, There is a file called `demo.env` in "eco395_final_project/code/demo.env" which you need to connect to the database. Modify the file `demo.env` by providing the right credentials and then change its name to`.env`.
 
 Now, go to the file `sql_code_two`, "code/sql_setup/sql_code_two.ipynb". After runnig the first block of the code to import required libraries, you will get the data produced in `FIRST STEP` through reading the csv files from the folder`data_two`by running the second block shown below:
 ```python
