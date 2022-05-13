@@ -8,3 +8,9 @@ TA_Lib==0.4.24
 yfinance==0.1.70
 python-dotenv==0.20.0
 SQLAlchemy==1.4.32
+bt
+prophet
+warnings
+seaborn
+import_ipynb
+re
