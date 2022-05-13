@@ -5,7 +5,7 @@ Since scraping long historical data required very long time and for the objectiv
 
 ***Here you need to use "eco395_final_project/code/sql_setup/sql_code_one.ipynb" and "eco395_final_project/code/data_one"***
 
-**Reminder**:No need to do it! we already did it for you and you can start from the `SECOND STEP` to get your database ready!
+**Reminder**: No need to do it! we already did it for you and you can start from the `SECOND STEP` to get your database ready!
 
 In this part you will get a list of all the S&P500 stock tickers using the Pandas `read_html` function to scrape Wikipedia as shown below:
 ```python
