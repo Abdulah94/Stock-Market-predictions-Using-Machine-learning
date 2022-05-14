@@ -43,6 +43,8 @@ Mean reversion trading uses signals to detect market imbalance and takes long po
 Relative Strength Index (RSI):
 RSI measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset.
 Typically, an RSI over 70 indicates an overbought market condition, which means the asset is overvalued and the price may reverse. An RSI below 30 suggests an oversold market condition, which means the asset is undervalued and the price may rally.
+
+
 Bollinger Bands (BB):
 Bollinger Bands are a popular type of volatility indicator, they help determine whether prices are high or low on a relative basis. For example, If the price moves very close to the upper band, it suggests the price is relatively too expensive, and vice-versa.
 
