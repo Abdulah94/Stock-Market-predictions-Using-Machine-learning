@@ -1,11 +1,11 @@
-# eco395_final_project
+# Stock Market predictions Using Machine learning
 
-## Description and methodology
+## Introduction
 
 In this project we will conduct Technical Analysis and Machine Learning models on S&P500 daily stock data, to help traders to take better decisions by gaining insights on past price patterns and predicting future movements.
 
 We will start with technical analysis by using mean reversion trading strategies (RSI, Bollinger Bands) and momentum-based strategy (ADX), then we’ll move to the ML models to predict future movements.
-In this part we’ll start with a classification model by different predictive variables and technical indicators. Then …..
+In this part we’ll start with a classification model to classify the movements of stock prices and give a reccommendation based on the distribution of the historical returns. Finally, we'll conduct a regression based machine learning model using "Prophet" package.
 
 ## SQL dataset
 In this project we used a sql dataset that obtains and store stock data from Yahoo Finance. To create your own SQL dataset refer to the following instructions ["SQL Setup"](https://github.com/Abdulah94/eco395_final_project/blob/main/code/sql_setup/README.md)
@@ -33,7 +33,9 @@ pip install -r requirements.txt```
 --- 
 4. Make sure to change the queries and functions variable names in the code to the stock ticker you to perform the analysis to.
 
-## Technical Analysis
+## Methodology
+
+### Technical Analysis
 Technical analysis is a trading discipline employed to evaluate investments and identify trading opportunities by analyzing statistical trends gathered from trading activity, such as price movement and volume. 
 
 ##### Mean Reversion Trading Strategies
@@ -41,7 +43,7 @@ Mean reversion trading uses signals to detect market imbalance and takes long po
 Relative Strength Index (RSI):
 RSI measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset.
 Typically, an RSI over 70 indicates an overbought market condition, which means the asset is overvalued and the price may reverse. An RSI below 30 suggests an oversold market condition, which means the asset is undervalued and the price may rally.
-Blinger Bands (BB):
+Bollinger Bands (BB):
 Bollinger Bands are a popular type of volatility indicator, they help determine whether prices are high or low on a relative basis. For example, If the price moves very close to the upper band, it suggests the price is relatively too expensive, and vice-versa.
 
 ##### Momentum-based strategies
@@ -72,6 +74,11 @@ Finally, after we trained the classification model, we tested its performance on
 
 ### Machine learning regression model using PROPHET package
 In this part we used the Facebook prophet package in addition to various functions to design three basic stock trading models according to the calculation results, these methods proved the validity of the trading model according to the historical data backtesting.
+
+In this model we used an API package called "yfinance", to obtain the latest data of each stock, and create a user-interactive python file, to be able to freely select the stocks we want to carry out in the analysis.
+
+We've created a various graphs to analyze the development prospects of each stock before we decide to invest in it. Then, designed three stock trading methods to compare them with the basic holding method, and finally came to a reliable conclusion, according to the results predicted by the prophet, we can make more profits than ordinary strategies.
+
 
 
 ## Limitations and room for improvements
