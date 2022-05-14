@@ -1,4 +1,4 @@
+.ipynb_checkpoints/
 .ipynb_checkpoints
-/code/.ipynb_checkpoints
-/code/.env
-/code/__pycache__/
+.env
+__pycache__/
